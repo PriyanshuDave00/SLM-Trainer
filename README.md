@@ -25,24 +25,6 @@ A lightweight **character-level SLM (Statistical Language Model) trainer** imple
 - **README.md** – Project documentation  
 ---
 
-## Installation
-
-1. Clone the repository:
-
-git clone https://github.com/yourusername/slm-trainer.git
-cd slm-trainer
----
-
-## Usage
-
-### Train a model
-
-python src/trainer.py --input data/corpus.txt --output models/slm_model.pkl --seq_len 64 --epochs 10
-
-- `--input`: Path to training text corpus  
-- `--output`: Path to save trained model  
-- `--seq_len`: Sequence length for character input  
-- `--epochs`: Number of training epochs  
 
 ## Limitations
 
