@@ -33,13 +33,6 @@ A lightweight **character-level SLM (Statistical Language Model) trainer** imple
 
 git clone https://github.com/yourusername/slm-trainer.git
 cd slm-trainer
-
-2. Install dependencies:
-
-pip install -r requirements.txt
-
-> Python 3.10+ recommended.
-
 ---
 
 ## Usage
@@ -53,12 +46,6 @@ python src/trainer.py --input data/corpus.txt --output models/slm_model.pkl --se
 - `--seq_len`: Sequence length for character input  
 - `--epochs`: Number of training epochs  
 
-### Evaluate model
-
-python src/trainer.py --evaluate models/slm_model.pkl --input data/test_corpus.txt
-
----
-
 ## Limitations
 
 - Character-level models can capture **local structure** but struggle with **long-range dependencies** and semantic coherence.  
@@ -69,7 +56,7 @@ python src/trainer.py --evaluate models/slm_model.pkl --input data/test_corpus.t
 
 ## Future Work
 
-- Extend to subword-level or byte-pair encoding for better performance.  
+- (On going) Extending to subword-level or byte-pair encoding for better performance.  
 - Implement simple neural network variants (RNNs/LSTMs) to improve context modeling.  
 - Compare character-level SLM output to word-level models on benchmark corpora.  
 
